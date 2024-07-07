@@ -1,6 +1,7 @@
 import Hero from "./Hero"
 import ProductCard from "./ProductCard"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 
 export default function Categories() {
   const [product, setProduct] = useState([]);
@@ -20,12 +21,12 @@ export default function Categories() {
     <div>
       <Hero />
       <div className="grid grid-cols-1 xl:grid-cols-3 mt-10 gap-6">
-        {product.map((item, index) => (
-        <ProductCard key={index} item={item} /> 
+        {product.map((item) => (
+          <Link key={item.id} to={`/product/${item.id}`} >
+            <ProductCard item={item} />
+          </Link>
         ))}
-       
       </div>
-     
     </div>
   );
 }

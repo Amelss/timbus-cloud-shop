@@ -14,7 +14,10 @@ export default function Header() {
     <div className="xl:mb-5">
       <div className="xl:hidden bg-white px-4 py-3">
         <div>
-          <h1 className="font-bold text-1xl">BLUESPACE</h1>
+          <Link to="/">
+            <h1 className="font-bold text-1xl">BLUESPACE</h1>
+          </Link>
+          
         </div>
         <div>
           <Menu
@@ -45,10 +48,12 @@ export default function Header() {
       </div>
       <div className="hidden xl:flex justify-between items-center">
         <div className="bg-white w-full py-3 px-2">
-          <h1 className="ml-3 font-bold text-2xl">BLUESPACE</h1>
+          <Link to="/">
+            <h1 className="ml-3 font-bold text-2xl">BLUESPACE</h1>
+          </Link>
         </div>
         <div className="flex items-center">
-          <div className="bg-white  py-3 px-6">
+          <div className="bg-white  py-4 px-6">
             {/* <Link to="/" className="">
               Home
             </Link> */}
@@ -64,15 +69,19 @@ export default function Header() {
           </div>
 
           <div className="flex ml-10 items-center">
-            <div className="flex items-center bg-white pl-4 pr-7 py-3">
+            <div className="flex items-center bg-white pl-4 pr-7 py-4">
               <Link to="/Cart" className=" ">
                 Cart
               </Link>
-              <img src="./cart-outline.png" alt="Cart image" className="w-4 ml-2"/>
+              <img
+                src="/cart-outline.png"
+                alt="Cart image"
+                className="w-4 ml-2"
+              />
             </div>
 
             <div className="mr-5">
-              <button className="ml-5 bg-black text-white text-xs w-full px-7 py-2 ">
+              <button className="ml-5 bg-black text-white text-xs w-full px-7 py-3 ">
                 Join Blue Space
               </button>
             </div>
