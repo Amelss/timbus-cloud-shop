@@ -1,4 +1,4 @@
-// Product.jsx
+
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -30,10 +30,39 @@ export default function Product() {
 
   return (
     <div>
-      <h1>{product.productName}</h1>
-      <img src={product.productImage} alt={product.productName} />
-      <p>{product.description}</p>
-      <p>{product.price}</p>
+      <div className="block xl:flex justify-between mt-5 xl:pt-10">
+        <img
+          src={product.productImage}
+          alt={product.productName}
+          className=""
+        />
+        <div className="bg-white xl:h-80 xl:w-[500px] pb-5  xl:pb-20 pt-6 px-6 mt-10 xl:mt-0">
+          <h1 className="text-xl mb-3">{product.productName}</h1>
+          <p className="text-gray-400 mb-3">{product.price}</p>
+          <p className="text-gray-400 mb-6">{product.description}</p>
+          <p className="bg-green-300 p-1 w-20 text-xs text-green-700 text-center mt-2 mb-8">
+            Available
+          </p>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <p>Quantity</p>
+              <p className="ml-3">1</p>
+            </div>
+            <div className="bg-black px-12 py-5 flex items-center ">
+              <button className="text-white text-center">Add To Cart</button>
+              <img
+                src="/cart-outline-white.png"
+                alt="cart"
+                className="w-6 ml-1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>View Similar Products</h1>
+      </div>
     </div>
   );
 }
