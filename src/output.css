@@ -638,6 +638,30 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.-ml-10{
+  margin-left: -2.5rem;
+}
+
+.-mr-10{
+  margin-right: -2.5rem;
+}
+
+.-ml-3{
+  margin-left: -0.75rem;
+}
+
+.-mr-3{
+  margin-right: -0.75rem;
+}
+
+.-ml-4{
+  margin-left: -1rem;
+}
+
 .block{
   display: block;
 }
@@ -766,6 +790,11 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .p-3{
   padding: 0.75rem;
 }
@@ -850,6 +879,11 @@ video {
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-10{
@@ -1074,6 +1108,18 @@ video {
     margin-top: 0px;
   }
 
+  .xl\:ml-1{
+    margin-left: 0.25rem;
+  }
+
+  .xl\:mr-0{
+    margin-right: 0px;
+  }
+
+  .xl\:-mr-0{
+    margin-right: -0px;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -1119,6 +1165,11 @@ video {
     padding-right: 1rem;
   }
 
+  .xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .xl\:pb-20{
     padding-bottom: 5rem;
   }
@@ -1142,5 +1193,10 @@ video {
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
