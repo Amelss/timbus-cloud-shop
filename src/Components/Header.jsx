@@ -61,19 +61,21 @@ export default function Header() {
             <Link to="/Help" className="ml-5">
               Help
             </Link>
-            
           </div>
 
           <div className="flex ml-10 items-center">
-            <Link to="/Cart" className="bg-white px-4 py-3">
-              Cart
-            </Link>
-            <div className="mr-5">
-               <button className="ml-5 bg-black text-white text-xs w-full px-7 py-2 ">
-              Join Blue Space
-            </button>
+            <div className="flex items-center bg-white pl-4 pr-7 py-3">
+              <Link to="/Cart" className=" ">
+                Cart
+              </Link>
+              <img src="./cart-outline.png" alt="Cart image" className="w-4 ml-2"/>
             </div>
-           
+
+            <div className="mr-5">
+              <button className="ml-5 bg-black text-white text-xs w-full px-7 py-2 ">
+                Join Blue Space
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import Header from "./Header"
 import Categories from "./Categories"
-import Home from "./Home"
 import Cart from "./Cart"
 import Help from "./Help"
 import Product from "./Product"
@@ -17,7 +16,7 @@ export default function Content() {
       </div>
       <div>
         <Routes >
-         <Route exact path="/" element={<Home />}/> 
+         <Route exact path="/" element={<Categories />}/> 
           <Route path="/Categories" element={<Categories /> } />
           <Route path="/Product" element={<Product /> } />
           <Route path="/Help" element={<Help /> } />
