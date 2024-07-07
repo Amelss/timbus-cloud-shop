@@ -1,0 +1,65 @@
+[
+  {
+    "id": "0",
+    "productName": "Executive Mesh Black",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-1.png",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "1",
+    "productName": "Home Ergonomic",
+    "price": "$500",
+    "productImage": "./products/black-office-chairs-2.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "2",
+    "productName": "Albus Medium",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-3.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "3",
+    "productName": "Executive Mesh High Black",
+    "price": "$690",
+    "productImage": "./products/black-office-chairs-4.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "4",
+    "productName": "Stylish Presidential",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-5.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "5",
+    "productName": "Low Back Mesh",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-6.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "6",
+    "productName": "Executive Mesh Pink Seat",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-7.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "7",
+    "productName": "Mesh Black Slider",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-8.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  },
+  {
+    "id": "8",
+    "productName": "Presidential Mesh Slider",
+    "price": "$650",
+    "productImage": "./products/black-office-chairs-9.jpeg",
+    "description": "Comfort and functionality combined. this chair promotes the back health an beautifies the office environment."
+  }
+]

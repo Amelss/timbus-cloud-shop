@@ -15,7 +15,7 @@ export default function Content() {
           <div className="">
              <Header />
       </div>
-      <div className="bg-white">
+      <div>
         <Routes >
          <Route exact path="/" element={<Home />}/> 
           <Route path="/Categories" element={<Categories /> } />

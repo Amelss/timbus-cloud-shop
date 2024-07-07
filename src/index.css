@@ -6,11 +6,11 @@
 
 
 .bm-burger-button {
-  position: fixed;
+  position: relative;
   width: 26px;
   height: 20px;
-  right: 20px;
-  top: 25px;
+  left: 300px;
+  top: -20px;
 }
 
 

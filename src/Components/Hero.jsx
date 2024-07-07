@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="px-4 pb-10 mt-7">
+    <div className="px-4 pb-10 mt-7 bg-white">
       <h3 className="text-xs pt-4">
         <span className="font-light text-gray-400 ">Home \ Categories \ </span>
         <span className="">Office Seats</span>
