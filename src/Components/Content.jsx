@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 export default function Content() {
   return (
-      <div className="bg-slate-200 p-10">
+      <div className="bg-slate-200 p-3">
           <div className="">
              <Header />
       </div>

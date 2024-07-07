@@ -11,8 +11,8 @@ export default function Header() {
   };
 
   return (
-    <div className="xl:p-4">
-      <div className="xl:hidden">
+    <div className="xl:mb-5">
+      <div className="xl:hidden bg-white px-4 py-3">
         <div>
           <h1 className="font-bold text-1xl">BLUESPACE</h1>
         </div>
@@ -68,8 +68,8 @@ export default function Header() {
             <Link to="/Cart" className="bg-white px-4 py-3">
               Cart
             </Link>
-            <div className="w-full">
-               <button className="ml-5 bg-black text-white text-xs w-full px-7 py-2">
+            <div className="mr-5">
+               <button className="ml-5 bg-black text-white text-xs w-full px-7 py-2 ">
               Join Blue Space
             </button>
             </div>
