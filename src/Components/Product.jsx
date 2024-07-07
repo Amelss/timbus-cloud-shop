@@ -1,10 +1,11 @@
-
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ProductCard from "./ProductCard"; // Make sure to import your ProductCard component
 
 export default function Product() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [similarProducts, setSimilarProducts] = useState([]);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -16,6 +17,10 @@ export default function Product() {
         const data = await response.json();
         const selectedProduct = data.find((item) => item.id === id);
         setProduct(selectedProduct);
+
+        // Filter out the current product to find similar products
+        const similarItems = data.filter((item) => item.id !== id);
+        setSimilarProducts(similarItems);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -61,7 +66,12 @@ export default function Product() {
       </div>
 
       <div>
-        <h1>View Similar Products</h1>
+        <h1 className="text-2xl mt-10 mb-5">Similar to this Product</h1>
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+          {similarProducts.slice(2,5).map((item) => (
+            <ProductCard key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
