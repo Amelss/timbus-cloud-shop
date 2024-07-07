@@ -14,12 +14,12 @@ export default function Hero() {
       </div>
 
       <div className="block xl:flex items-center">
-        <div className="flex items-center  bg-gray-200 px-3 py-2 mt-3 xl:mt-0 w-20 xl:w-auto">
+        <div className="flex items-center  bg-backgroundGrey px-3 py-2 mt-3 xl:mt-0 w-20 xl:w-auto">
           <img src="./filter-outline.png" alt="Filter" className="w-4" />
           <p className="text-xs">Filter</p>
         </div>
 
-        <div className="flex items-center w-48 xl:w-auto bg-gray-200 mt-3 xl:mt-0 xl:ml-5 px-3 py-2">
+        <div className="flex items-center w-48 xl:w-auto bg-backgroundGrey mt-3 xl:mt-0 xl:ml-5 px-3 py-2">
           <p className="text-xs">Subcategory | Ergonomic</p>
           <img
             src="./chevron-down.png"
@@ -27,7 +27,7 @@ export default function Hero() {
             className="w-4"
           />
         </div>
-        <div className="flex items-center bg-gray-200 mt-3 xl:mt-0 xl:ml-5 px-3 py-2 w-40 xl:w-auto">
+        <div className="flex items-center bg-backgroundGrey mt-3 xl:mt-0 xl:ml-5 px-3 py-2 w-40 xl:w-auto">
           <p className="text-xs">Price | Under $700</p>
           <img
             src="./chevron-down.png"

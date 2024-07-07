@@ -45,7 +45,7 @@ export default function Header() {
       </div>
       <div className="hidden xl:flex justify-between items-center">
         <div className="bg-white w-full py-3 px-2">
-          <h1 className="ml-3 font-bold">BLUESPACE</h1>
+          <h1 className="ml-3 font-bold text-2xl">BLUESPACE</h1>
         </div>
         <div className="flex items-center">
           <div className="bg-white  py-3 px-6">
