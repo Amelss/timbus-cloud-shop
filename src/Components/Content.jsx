@@ -5,6 +5,7 @@ import Help from "./Help"
 import Contact from "./Contact"
 import Product from "./Product"
 import Checkout from "./Checkout"
+import Footer from "./Footer"
 import { Routes, Route } from "react-router-dom";
 
 
@@ -27,6 +28,7 @@ export default function Content() {
           <Route path="/Checkout" element={<Checkout />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

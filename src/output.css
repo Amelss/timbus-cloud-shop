@@ -1082,6 +1082,10 @@ input[type="range"]::-ms-fill-lower{
   height: 2.25rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1134,6 +1138,14 @@ input[type="range"]::-ms-fill-lower{
   max-width: 32rem;
 }
 
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1158,6 +1170,10 @@ input[type="range"]::-ms-fill-lower{
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -1637,9 +1653,23 @@ input[type="range"]::-ms-fill-lower{
   --tw-ring-color: rgb(28 100 242 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:h-screen{
+    height: 100vh;
+  }
+}
+
 @media (min-width: 768px){
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:w-1\/2{
@@ -1651,10 +1681,25 @@ input[type="range"]::-ms-fill-lower{
   }
 }
 
+@media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+}
+
 @media (min-width: 1280px){
   .xl\:my-0{
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .xl\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .xl\:mb-0{
@@ -1707,6 +1752,10 @@ input[type="range"]::-ms-fill-lower{
 
   .xl\:h-80{
     height: 20rem;
+  }
+
+  .xl\:h-screen{
+    height: 100vh;
   }
 
   .xl\:w-24{
@@ -1773,5 +1822,15 @@ input[type="range"]::-ms-fill-lower{
   .xl\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:flex{
+    display: flex;
+  }
+
+  .\32xl\:hidden{
+    display: none;
   }
 }

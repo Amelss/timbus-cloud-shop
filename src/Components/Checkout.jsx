@@ -1,6 +1,6 @@
 export default function Checkout() {
   return (
-    <div>
+    <div className="xl:h-screen ">
       <div className="block xl:flex justify-between">
         <div>
           <p className="mt-6 text-gray-500 text-xs">Home \ Cart \<span className="text-black"> Checkout</span></p>
@@ -22,7 +22,7 @@ export default function Checkout() {
             <p className="my-6 text-sm text-gray-600">
               Complete your purchase by providing your payment details
             </p>
-            <form className="w-full max-w-lg">
+            <form className="w-full max-w-2xl">
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                   <label

@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <div className="xl:mb-5">
-      <div className="xl:hidden bg-white px-4 py-3">
+      <div className="md:hidden bg-white px-4 py-3">
         <div>
           <Link to="/">
             <h1 className="font-bold text-1xl">BLUESPACE</h1>
@@ -46,7 +46,7 @@ export default function Header() {
           </Menu>
         </div>
       </div>
-      <div className="hidden xl:flex justify-between items-center">
+      <div className="hidden md:flex justify-between items-center">
         <div className="bg-white w-full py-3 px-2">
           <Link to="/">
             <h1 className="ml-3 font-bold text-2xl">BLUESPACE</h1>

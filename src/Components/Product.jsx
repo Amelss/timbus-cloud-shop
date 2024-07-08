@@ -48,7 +48,7 @@ export default function Product() {
         <img
           src={product.productImage}
           alt={product.productName}
-          className=""
+          className="mx-auto xl:mx-0"
         />
         <div className="bg-white xl:h-80 xl:w-[500px] pb-5  xl:pb-20 pt-6 px-6 mt-10 xl:mt-0">
           <h1 className="text-xl mb-3">{product.productName}</h1>
