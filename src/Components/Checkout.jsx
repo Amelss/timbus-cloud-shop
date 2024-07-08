@@ -1,7 +1,7 @@
 export default function Checkout() {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="block xl:flex justify-between">
         <div>
           <p>Home \ Cart \ Checkout</p>
           <div className="flex items-center justify-between">
@@ -16,79 +16,133 @@ export default function Checkout() {
             </div>
           </div>
         </div>
-        <div>
-          <h1>Payment Details</h1>
-          <p>Complete your payment....</p>
-          <form className="w-full max-w-lg">
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name" />
-        First Name
-   
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
-      <p className="text-red-500 text-xs italic">Please fill out this field.</p>
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name" />
-        Last Name
-     
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
-    </div>
-  </div>
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password" />
-        Password
-    
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************" />
-      <p className="text-gray-600 text-xs italic">Make it as long and as crazy as you like</p>
-    </div>
-  </div>
-  <div className="flex flex-wrap -mx-3 mb-2">
-    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-city" />
-        City
- 
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque" />
-    </div>
-    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-state">
-        State
-      </label>
-      <div className="relative">
-        <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>New Mexico</option>
-          <option>Missouri</option>
-          <option>Texas</option>
-        </select>
-        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-        </div>
-      </div>
-    </div>
-    <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-zip" />
-        Zip
-     
-      <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210" />
-    </div>
-  </div>
-</form>
-          <div className="bg-white mt-10">
-            <div className="flex items-center justify-between">
-              <p>Subtotal</p>
-              <p>$640</p>
+        <div className="">
+          <div className="bg-white p-8">
+            <h1>Payment Details</h1>
+            <p className="my-6 text-sm text-gray-600">
+              Complete your purchase by providing your payment details
+            </p>
+            <form className="w-full max-w-lg">
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label
+                    className="block tracking-wide text-gray-700 text-xs mb-2"
+                    htmlFor="grid-email"
+                  >
+                    Email Address
+                  </label>
+                  <input
+                    className=" block w-full bg-backgroundGrey text-gray-700 text-sm py-3 px-4 mb-3 leading-tight border-none"
+                    id="grid-password"
+                    type="email"
+                    placeholder="clara-thomas@gmail.com"
+                  />
+                </div>
+              </div>
+              <p className="text-gray-600 text-xs mb-3 ">
+                Select Payment Method
+              </p>
+
+              <div className="block xl:flex items-center justify-between">
+                <div className="flex items-center bg-backgroundGrey p-4 xl:-mt-4 xl:w-56 border border-gray-400">
+                  <input
+                    checked
+                    id="default-radio-2"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    className="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black  "
+                  />
+                  <label
+                    htmlFor="default-radio-2"
+                    className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Credit/Debit Card
+                  </label>
+                </div>
+                <div className="flex items-center mb-4  bg-backgroundGrey p-4 xl:ml-3 xl:w-56 border border-gray-400 mt-4 xl:mt-0 ">
+                  <input
+                    id="default-radio-1"
+                    type="radio"
+                    value=""
+                    name="default-radio"
+                    className="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black 0 focus:ring-2 "
+                  />
+                  <label
+                    htmlFor="default-radio-1"
+                    className="ms-2 text-sm font-medium text-black"
+                  >
+                    Virtual Account
+                  </label>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                  <label
+                    className="block tracking-wide text-gray-700 text-xs mb-2"
+                    htmlFor="grid-email"
+                  >
+                    Card Number
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-backgroundGrey text-sm border-none text-gray-700 py-3 px-4 mb-3 leading-tight "
+                    id="grid-password"
+                    type="password"
+                    placeholder="4756 2890 8182 3889"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    className="block tracking-wide text-gray-700 text-xs mb-2"
+                    htmlFor="grid-first-name"
+                  >
+                    Expiry Date
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-backgroundGrey border-none py-3 px-4 mb-3 leading-tight text-sm"
+                    id="grid-first-name"
+                    type="text"
+                    placeholder="23/09"
+                  />
+                </div>
+                <div className="w-full md:w-1/2 px-3">
+                  <label
+                    className="block tracking-wide text-gray-700 text-xs mb-2"
+                    htmlFor="grid-last-name"
+                  >
+                    CVV
+                  </label>
+                  <input
+                    className="appearance-none block w-full bg-backgroundGrey text-gray-700 border-none text-sm  py-3 px-4 leading-tight "
+                    id="grid-last-name"
+                    type="text"
+                    placeholder="256"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="bg-white mt-10 p-6">
+            <div className="flex items-center justify-between text-xs xl:text-sm ">
+              <p className="text-gray-600">Subtotal</p>
+              <p>$650</p>
             </div>
-            <div className="flex items-center justify-between">
-              <p>Subtotal</p>
-              <p>$640</p>
+            <div className="flex items-center justify-between text-xs xl:text-sm">
+              <p className="text-gray-600">Discount</p>
+              <p>$0</p>
             </div>
-            <div className="flex items-center justify-between">
-              <p>Subtotal</p>
-              <p>$640</p>
-                      </div>
-                      <div>
-                        <button className="bg-black text-white w-full">Continue to Payment</button>  
+            <div className="flex items-center justify-between text-xs xl:text-sm">
+              <p className="text-gray-600">Total</p>
+              <p>$650</p>
+            </div>
+            <div>
+              <button className="bg-black text-white w-full py-4 mt-3">
+                Continue to Payment
+              </button>
             </div>
           </div>
         </div>
