@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ProductCard from "./ProductCard"; // Make sure to import your ProductCard component
+import ProductCard from "./ProductCard"; 
+import { Link } from "react-router-dom";
 
 export default function Product() {
   const { id } = useParams();
@@ -19,7 +20,7 @@ export default function Product() {
         const selectedProduct = data.find((item) => item.id === id);
         setProduct(selectedProduct);
 
-        // Filter out the current product to find similar products
+       
         const similarItems = data.filter((item) => item.id !== id);
         setSimilarProducts(similarItems);
       } catch (error) {
@@ -75,7 +76,11 @@ export default function Product() {
                 </button>
               </div>
             </div>
+            <Link to="/Cart">
+              
+             
             <div className="bg-black px-5 w-56 xl:w-auto xl:px-12 py-5 flex items-center">
+              
               <button className="text-white text-sm xl:text-base text-center font-light mx-auto">
                 Add To Cart
               </button>
@@ -84,7 +89,7 @@ export default function Product() {
                 alt="cart"
                 className="w-6 xl:ml-1 mx-auto"
               />
-            </div>
+            </div> </Link>
           </div>
         </div>
       </div>
