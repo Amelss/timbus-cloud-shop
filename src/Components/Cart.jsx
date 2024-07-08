@@ -27,20 +27,20 @@ const handleQuantityChange = (amount) => {
   
   return (
     <div>
-      <div className="block xl:flex items-center justify-between mt-6">
+      <div className="block xl:flex items-center justify-between mt-10">
         <div>
           <p className="text-xs mb-3">
-            <span className="text-gray-300">Home </span>\ Cart
+            <span className="text-gray-300 mb-10">Home </span>\ Cart
           </p>
           <div className="flex items-center justify-between mb-10">
             <img
               src="/products/black-office-chairs-3.jpeg"
               alt="Product image"
-              className="w-20"
+              className="w-20 xl:w-24"
             />
             <div className="ml-10">
               <h1 className="mb-3">Albus Medium - $650</h1>
-              <p className="text-xs xl:text-md">
+              <p className="text-xs xl:text-base xl:w-96">
                 Comfort and functionality combined. this chair promotes the back
                 health an beautifies the office environment
               </p>
@@ -48,17 +48,17 @@ const handleQuantityChange = (amount) => {
           </div>
           <div className="flex items-center justify-between mb-10">
             <div className="flex items-center">
-              <p>Quantity</p>
+              <p className="text-sm">Quantity</p>
               <div className="flex items-center ml-3">
                 <button
-                  className="px-2 py-1 bg-gray-200"
+                  className="px-2 py-1 bg-gray-200 text-sm"
                   onClick={() => handleQuantityChange(-1)}
                 >
                   -
                 </button>
-                <p className="px-3">{quantity}</p>
+                <p className="px-3 text-sm">{quantity}</p>
                 <button
-                  className="px-2 py-1 bg-gray-200"
+                  className="px-2 py-1 bg-gray-200 text-sm"
                   onClick={() => handleQuantityChange(1)}
                 >
                   +
@@ -66,7 +66,7 @@ const handleQuantityChange = (amount) => {
               </div>
             </div>
 
-            <button className="bg-black text-white p-4 w-40">Remove</button>
+            <button className="bg-black text-white p-4 w-40 text-sm">Remove</button>
           </div>
         </div>
 

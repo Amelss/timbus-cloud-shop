@@ -650,6 +650,14 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1076,6 +1084,14 @@ video {
     width: auto;
   }
 
+  .xl\:w-40{
+    width: 10rem;
+  }
+
+  .xl\:w-24{
+    width: 6rem;
+  }
+
   .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1111,5 +1127,10 @@ video {
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
