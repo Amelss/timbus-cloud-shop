@@ -60,10 +60,10 @@ export default function Header() {
             <Link to="/Categories" className="ml-5">
               Categories
             </Link>
-            <Link to="/Contact" className="ml-5">
+            <Link to="/" className="ml-5">
               Contact
             </Link>
-            <Link to="/Help" className="ml-5">
+            <Link to="/" className="ml-5">
               Help
             </Link>
           </div>

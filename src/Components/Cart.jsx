@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard"; 
 
 export default function Cart() {
@@ -86,11 +86,14 @@ const handleQuantityChange = (amount) => {
               <p className="">Total</p>
               <p>$650</p>
             </div>
-            <div className="text-center mt-7">
+            <Link to={"/Checkout"}><div className="text-center mt-7">
+              
+              
               <button className="bg-black text-white p-4 w-full ">
                 Checkout
               </button>
             </div>
+            </Link>
           </div>
         </div>
       </div>
