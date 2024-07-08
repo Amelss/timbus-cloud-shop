@@ -1850,4 +1850,8 @@ input[type="range"]::-ms-fill-lower{
   .\32xl\:hidden{
     display: none;
   }
+
+  .\32xl\:h-screen{
+    height: 100vh;
+  }
 }
