@@ -3,22 +3,22 @@ export default function Checkout() {
     <div>
       <div className="block xl:flex justify-between">
         <div>
-          <p>Home \ Cart \ Checkout</p>
-          <div className="flex items-center justify-between">
-            <img src="" alt="" />
-            <div>
-              <h1>Executive Mesh</h1>
-              <p>
+          <p className="mt-6 text-gray-500 text-xs">Home \ Cart \<span className="text-black"> Checkout</span></p>
+          <div className="block xl:flex justify-between">
+            <img src="/products/black-office-chairs-3.jpeg" alt="Product Image" className="w-full xl:w-96 my-5"/>
+            <div className="xl:ml-20 mt-4 mb-10">
+              <h1 className="text-xl xl:text-1xl">Albus Medium - $650</h1>
+              <p className="xl:w-96 mt-3 text-gray-400 "> 
                 Comfort and functionality combined. this chair promotes the back
                 health an beautifies the office environment
               </p>
-              <p>Quantity 1</p>
+              <p className="mt-3 text-gray-400">Quantity 1</p>
             </div>
           </div>
         </div>
         <div className="">
           <div className="bg-white p-8">
-            <h1>Payment Details</h1>
+            <h1 className="font-bold text-xl">Payment Details</h1>
             <p className="my-6 text-sm text-gray-600">
               Complete your purchase by providing your payment details
             </p>
@@ -140,7 +140,7 @@ export default function Checkout() {
               <p>$650</p>
             </div>
             <div>
-              <button className="bg-black text-white w-full py-4 mt-3">
+              <button className="bg-black text-white w-full py-4 mt-3 text-xs xl:text-sm">
                 Continue to Payment
               </button>
             </div>
