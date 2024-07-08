@@ -1,6 +1,6 @@
 export default function Checkout() {
   return (
-    <div className="xl:h-screen ">
+    <div className="2xl:h-screen ">
       <div className="block xl:flex justify-between">
         <div>
           <p className="mt-6 text-gray-500 text-xs">Home \ Cart \<span className="text-black"> Checkout</span></p>
